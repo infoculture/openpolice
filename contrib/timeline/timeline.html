@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="timeline/css/timeline.css" />
+  </head>
+  <body>
+  <div id="timeline-embed"></div>
+    <script type="text/javascript">
+        var timeline_config = {
+            width:              '100%',
+            height:             '600',
+            source:             'timeline.json',
+            embed_id:           'timeline-embed',
+            start_at_end:       true,
+            //start_at_slide:     '4',
+            start_zoom_adjust:  '3',
+            hash_bookmark:      true,
+            font:               'Bevan-PotanoSans',             //OPTIONAL FONT
+            debug:              true,
+            lang:               'ru',
+            maptype:            'watercolor',                   //OPTIONAL MAP STYLE
+        }
+    </script>
+    <script type="text/javascript" src="timeline/js/storyjs-embed.js"></script>
+  </body>
+</html>
