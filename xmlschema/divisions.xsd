@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema targetNamespace="http://openpolice.ru/schema/divisions" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:rkn="http://openpolice.ru/schema/divisions" xmlns:xs="http://www.w3.org/2001/XMLSchema" xml:lang="ru">
+    <xs:element name="divisions">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="division" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- Уникальный идентификатор подразделения полиции -->
+                            <xs:element name="id" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                            <!-- Наименование подразделения полиции -->
+                            <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                            <!-- Тип подразделения: 1 – орган внутренних дел, 2 – отдел ГИБДД, 3 – Линейный отдел внутренних дел на транспорте -->
+                            <xs:element name="orgtype" type="xs:int"  minOccurs="1" maxOccurs="1"/>
+                            <!-- Адрес местонахождения подразделения полиции -->
+                            <xs:element name="address" type="xs:string"  minOccurs="1" maxOccurs="1"/>
+                            <!-- Контактный телефон подразделения полиции -->
+                            <xs:element name="phone" type="xs:string"  minOccurs="1" maxOccurs="1"/>
+                            <!-- Адрес электронной почты подразделения полиции -->
+                            <xs:element name="email" type="xs:string"  minOccurs="1" maxOccurs="1"/>
+                            <!-- Веб-сайт подразделения полиции (если есть) -->
+                            <xs:element name="website" type="xs:string"  minOccurs="0" maxOccurs="1"/>
+                            <!-- Код ОКАТО местонахождения подразделения полиции -->
+                            <xs:element name="okato" type="xs:string"  minOccurs="1" maxOccurs="1"/>
+                            <!-- Код местонахождения подразделения по общероссийскиому классификатору территорий муниципальных образований -->
+                            <xs:element name="oktmo" type="xs:string"  minOccurs="1" maxOccurs="1"/>
+                            <!-- Идентификатор подразделения полиции,  которому подчиняется данное подразделение -->
+                            <xs:element name="parent_id" type="xs:string"  minOccurs="0" maxOccurs="1"/>
+                            <!-- Наименование подразделения полиции,  которому подчиняется данное подразделение -->
+                            <xs:element name="parent_name" type="xs:string"  minOccurs="0" maxOccurs="1"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

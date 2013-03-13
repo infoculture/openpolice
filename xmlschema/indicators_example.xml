@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ind:indicators xmlns:ind="http://openpolice.ru/schema/indicators">
+  <!--Zero or more repetitions:-->
+  <ind:indicator>
+    <ind:id>1</ind:id>
+    <ind:name>Количество преступлений, зарегистрированных в отчетном периоде (единица)</ind:name>
+    <ind:description>Количество преступлений, зарегистрированных в отчетном периоде (единица)</ind:description>
+  </ind:indicator>
+</ind:indicators>

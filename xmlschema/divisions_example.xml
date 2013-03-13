@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div:divisions xmlns:div="http://openpolice.ru/schema/divisions">
+  <!--Zero or more repetitions:-->
+  <div:division>
+    <div:id>string</div:id>
+    <div:name>string</div:name>
+    <div:orgtype>3</div:orgtype>
+    <div:address>string</div:address>
+    <div:phone>string</div:phone>
+    <div:email>string</div:email>
+    <!--Optional:-->
+    <div:website>string</div:website>
+    <div:okato>string</div:okato>
+    <div:oktmo>string</div:oktmo>
+    <!--Optional:-->
+    <div:parent_id>string</div:parent_id>
+    <!--Optional:-->
+    <div:parent_name>string</div:parent_name>
+  </div:division>
+</div:divisions>

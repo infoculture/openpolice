@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema targetNamespace="http://openpolice.ru/schema/policedivstats" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:rkn="http://openpolice.ru/schema/policedivstats" xmlns:xs="http://www.w3.org/2001/XMLSchema" xml:lang="ru">
+    <xs:element name="statvalues">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="record" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- Уникальный идентификатор подразделения полиции -->
+                            <xs:element name="division_id" type="xs:string"  minOccurs="1" maxOccurs="1"/>
+                            <!-- Уникальный идентификатор индикатора -->
+                            <xs:element name="ind_id" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                            <!-- Месяц -->
+                            <xs:element name="month" type="xs:int" minOccurs="1" maxOccurs="1"/>
+                            <!-- Год -->
+                            <xs:element name="year" type="xs:int" minOccurs="1" maxOccurs="1"/>
+                            <!-- Значение индикатора -->
+                            <xs:element name="value" type="xs:float" minOccurs="1" maxOccurs="1"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+

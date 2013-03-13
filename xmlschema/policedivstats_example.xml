@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pol:statvalues xmlns:pol="http://openpolice.ru/schema/policedivstats">
+  <!--Zero or more repetitions:-->
+  <pol:record>
+    <pol:division_id>string</pol:division_id>
+    <pol:ind_id>string</pol:ind_id>
+    <pol:month>3</pol:month>
+    <pol:year>3</pol:year>
+    <pol:value>5000.0</pol:value>
+  </pol:record>
+</pol:statvalues>
