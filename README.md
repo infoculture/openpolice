@@ -4,3 +4,5 @@ Open Police project dedicated to Russian police openness for developers.
 
 contrib - исходный код нескольких компонентов
 xmlschema - схемы публикации праввохранительной статистики
+
+website: http://www.openpolice.ru
