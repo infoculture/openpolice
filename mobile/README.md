@@ -1,9 +1,8 @@
-Open Police project dedicated to Russian police openness for developers.
+  
+- db - база в SQLITE из мобильного приложения
+- raw_android - приложение в формате APK (ZIP файл)
+- code - кусок кода отвечающий за работу с API mvd.ru - реконструированный
 
-Проект "Открытая полиция" - материалы, данные и API по деятельности полиции.
-
-contrib - исходный код нескольких компонентов
-data - данные и скрипты их сбора
-xmlschema - схемы публикации праввохранительной статистики
-
-website: http://www.openpolice.ru
+Что необходимо:
+- превратить базу в набор CSV файлов
+- исследовать и описать API на mvd.ru 
