@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GenericData
+ xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/message"
+ xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/common"
+ xmlns:compact="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/compact"
+ xmlns:cross="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/cross"
+ xmlns:generic="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/generic"
+ xmlns:query="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/query"
+ xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/structure"
+ xmlns:utility="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/utility"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/message SDMXMessage.xsd">
+<Header Id="singHead">
+	<ID>823452214</ID>
+	<Test>false</Test>
+	<Truncated>false</Truncated>
+	<Prepared>2012-11-24T10:22:30</Prepared>
+	<Extracted>2012-11-24T10:22:30</Extracted>
+	<Sender id="UniSIS">
+		<Name xml:lang="en">Unified Interdepartmental Statistical Information System</Name>
+		<Name xml:lang="ru">Единая межведомственная информационно-статистическая система</Name>
+		<Contact>
+			<URI>mailto:emiss.dev@mail.ru</URI>
+		</Contact>
+	</Sender>
+	<DataSetAgency>3</DataSetAgency>
+	<DataSetID>P3_68</DataSetID>
+</Header>
+<CodeLists>
+	<structure:CodeList id="p3.16">
+		<structure:Name xml:lang="ru">Виды лицензирования</structure:Name>
+		<structure:Code value="1">
+			<structure:Description xml:lang="ru">торговля гражданским и служебным оружием и основными частями огнестрельного оружия</structure:Description>
+		</structure:Code>
+		<structure:Code value="2">
+			<structure:Description xml:lang="ru">реализация патронов к гражданскому и служебному оружию и составных частей патронов</structure:Description>
+		</structure:Code>
+		<structure:Code value="3">
+			<structure:Description xml:lang="ru">осуществление частной охранной деятельности</structure:Description>
+		</structure:Code>
+		<structure:Code value="4">
+			<structure:Description xml:lang="ru">осуществление частной детективной деятельности</structure:Description>
+		</structure:Code>
+	</structure:CodeList>
+</CodeLists>
+<Description Id="signObj">
+	<Indicator id="43085" name="Количество рассмотренных заявлений о переоформлении лицензий">
+		<Units>
+			<Unit value="единица"/>
+		</Units>
+		<Periodicities>
+			<Periodicity value="Полугодовая" releases="22 июля" next-release="22.07.2013"/>
+			<Periodicity value="Полугодовая" releases="20 января" next-release="20.01.2013"/>
+		</Periodicities>
+		<DataRange start="2012" end="2012"/>
+		<LastUpdate value="2012-08-28T17:12:41"/>
+		<Dimensions>
+			<Dimension value="p3.16" agencyID="3">
+				<Name xml:lang="ru">Виды лицензирования</Name>
+			</Dimension>
+			<Dimension value="p3.1" agencyID="3">
+				<Name xml:lang="ru">Справочник территорий РФ</Name>
+			</Dimension>
+		</Dimensions>
+		<Methodology value="Показатели форм: «1-лицензирование (Оружие)», «1-лицензирование (Патроны)», «1-лицензирование (ЧОД)», «1-лицензирование (ЧДД)». Формируется на основании приказа МВД России от 06.09.2012 № 848 &quot;О формах федерального статистического наблюдения за осуществлением лицензирования отдельных видов деятельности&quot;. Представляют ИЦ территориальных органов внутренних дел субъектов РФ."/>
+		<Organization value="Министерство внутренних дел"/>
+		<Department value="Главный информационно-аналитический центр"/>
+		<Allocations>
+			<Allocation id="3.15.">
+				<Name xml:lang="ru">По федеральному плану статработ / Министерство внутренних дел / Информация об осуществлении лицензирования отдельных видов деятельности в соответствии с законодательством Российской Федерации</Name>
+			</Allocation>
+		</Allocations>
+		<Responsible>
+			<Name xml:lang="ru">Васькина Е.В.</Name>
+			<Comments xml:lang="ru">(495) 332-30-07 csi_giac@mail.ru</Comments>
+		</Responsible>
+	</Indicator>
+</Description>
+<DataSet>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.16" value="1"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="71"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.16" value="2"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="41"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.16" value="3"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1223"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.16" value="4"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="6"/>
+		</generic:Obs>
+	</generic:Series>
+</DataSet>
+</GenericData>

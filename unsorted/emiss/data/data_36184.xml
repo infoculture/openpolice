@@ -1,0 +1,5290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GenericData
+ xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/message"
+ xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/common"
+ xmlns:compact="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/compact"
+ xmlns:cross="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/cross"
+ xmlns:generic="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/generic"
+ xmlns:query="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/query"
+ xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/structure"
+ xmlns:utility="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/utility"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/message SDMXMessage.xsd">
+<Header Id="singHead">
+	<ID>823259839</ID>
+	<Test>false</Test>
+	<Truncated>false</Truncated>
+	<Prepared>2012-11-24T10:19:18</Prepared>
+	<Extracted>2012-11-24T10:19:18</Extracted>
+	<Sender id="UniSIS">
+		<Name xml:lang="en">Unified Interdepartmental Statistical Information System</Name>
+		<Name xml:lang="ru">Единая межведомственная информационно-статистическая система</Name>
+		<Contact>
+			<URI>mailto:emiss.dev@mail.ru</URI>
+		</Contact>
+	</Sender>
+	<DataSetAgency>3</DataSetAgency>
+	<DataSetID>P3_51</DataSetID>
+</Header>
+<CodeLists>
+	<structure:CodeList id="p3.1">
+		<structure:Name xml:lang="ru">Справочник территорий РФ</structure:Name>
+		<structure:Code value="643">
+			<structure:Description xml:lang="ru">Российская Федерация</structure:Description>
+		</structure:Code>
+		<structure:Code value="030">
+			<structure:Description xml:lang="ru">Центральный фед.округ</structure:Description>
+		</structure:Code>
+		<structure:Code value="140000000001">
+			<structure:Description xml:lang="ru">Белгородская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="150000000001">
+			<structure:Description xml:lang="ru">Брянская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="170000000001">
+			<structure:Description xml:lang="ru">Владимирская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="200000000001">
+			<structure:Description xml:lang="ru">Воронежская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="240000000001">
+			<structure:Description xml:lang="ru">Ивановская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="290000000001">
+			<structure:Description xml:lang="ru">Калужская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="340000000001">
+			<structure:Description xml:lang="ru">Костромская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="380000000001">
+			<structure:Description xml:lang="ru">Курская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="420000000001">
+			<structure:Description xml:lang="ru">Липецкая область</structure:Description>
+		</structure:Code>
+		<structure:Code value="450000000001">
+			<structure:Description xml:lang="ru">г. Москва</structure:Description>
+		</structure:Code>
+		<structure:Code value="460000000001">
+			<structure:Description xml:lang="ru">Московская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="540000000001">
+			<structure:Description xml:lang="ru">Орловская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="610000000001">
+			<structure:Description xml:lang="ru">Рязанская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="660000000001">
+			<structure:Description xml:lang="ru">Смоленская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="680000000001">
+			<structure:Description xml:lang="ru">Тамбовская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="280000000001">
+			<structure:Description xml:lang="ru">Тверская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="700000000001">
+			<structure:Description xml:lang="ru">Тульская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="780000000001">
+			<structure:Description xml:lang="ru">Ярославская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="031">
+			<structure:Description xml:lang="ru">Северо-Западный фед.округ</structure:Description>
+		</structure:Code>
+		<structure:Code value="860000000001">
+			<structure:Description xml:lang="ru">Республика Карелия</structure:Description>
+		</structure:Code>
+		<structure:Code value="870000000001">
+			<structure:Description xml:lang="ru">Республика Коми</structure:Description>
+		</structure:Code>
+		<structure:Code value="110000000001">
+			<structure:Description xml:lang="ru">Архангельская обл. (с АО )</structure:Description>
+		</structure:Code>
+		<structure:Code value="110000000002">
+			<structure:Description xml:lang="ru">Архангельская обл. (без а/о)</structure:Description>
+		</structure:Code>
+		<structure:Code value="111000000001">
+			<structure:Description xml:lang="ru">Ненецкий АО</structure:Description>
+		</structure:Code>
+		<structure:Code value="190000000001">
+			<structure:Description xml:lang="ru">Вологодская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="270000000001">
+			<structure:Description xml:lang="ru">Калининградская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="410000000002">
+			<structure:Description xml:lang="ru">ГУВД г.Санкт-Петерб. и Лен.обл</structure:Description>
+		</structure:Code>
+		<structure:Code value="410000000001">
+			<structure:Description xml:lang="ru">Ленинградская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="400000000001">
+			<structure:Description xml:lang="ru">г. Санкт-Петербург</structure:Description>
+		</structure:Code>
+		<structure:Code value="470000000001">
+			<structure:Description xml:lang="ru">Мурманская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="490000000001">
+			<structure:Description xml:lang="ru">Новгородская  область</structure:Description>
+		</structure:Code>
+		<structure:Code value="580000000001">
+			<structure:Description xml:lang="ru">Псковская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="039">
+			<structure:Description xml:lang="ru">Северо-Кавказский фед. округ</structure:Description>
+		</structure:Code>
+		<structure:Code value="070000000001">
+			<structure:Description xml:lang="ru">Ставропольский край</structure:Description>
+		</structure:Code>
+		<structure:Code value="260000000001">
+			<structure:Description xml:lang="ru">Республика Ингушетия</structure:Description>
+		</structure:Code>
+		<structure:Code value="820000000001">
+			<structure:Description xml:lang="ru">Республика Дагестан</structure:Description>
+		</structure:Code>
+		<structure:Code value="830000000001">
+			<structure:Description xml:lang="ru">Кабардино-Балкарская Респ.</structure:Description>
+		</structure:Code>
+		<structure:Code value="900000000001">
+			<structure:Description xml:lang="ru">Респ. Сев.Осетия - Алания</structure:Description>
+		</structure:Code>
+		<structure:Code value="910000000001">
+			<structure:Description xml:lang="ru">Карачаево-Черкесская Респ.</structure:Description>
+		</structure:Code>
+		<structure:Code value="960000000001">
+			<structure:Description xml:lang="ru">Чеченская Республика</structure:Description>
+		</structure:Code>
+		<structure:Code value="032">
+			<structure:Description xml:lang="ru">Южный фед. округ</structure:Description>
+		</structure:Code>
+		<structure:Code value="030000000001">
+			<structure:Description xml:lang="ru">Краснодарский край</structure:Description>
+		</structure:Code>
+		<structure:Code value="120000000001">
+			<structure:Description xml:lang="ru">Астраханская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="180000000001">
+			<structure:Description xml:lang="ru">Волгоградская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="600000000001">
+			<structure:Description xml:lang="ru">Ростовская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="790000000001">
+			<structure:Description xml:lang="ru">Республика Адыгея</structure:Description>
+		</structure:Code>
+		<structure:Code value="850000000001">
+			<structure:Description xml:lang="ru">Республика Калмыкия</structure:Description>
+		</structure:Code>
+		<structure:Code value="033">
+			<structure:Description xml:lang="ru">Приволжский фед.округ</structure:Description>
+		</structure:Code>
+		<structure:Code value="800000000001">
+			<structure:Description xml:lang="ru">Республика Башкортостан</structure:Description>
+		</structure:Code>
+		<structure:Code value="880000000001">
+			<structure:Description xml:lang="ru">Республика Марий Эл</structure:Description>
+		</structure:Code>
+		<structure:Code value="890000000001">
+			<structure:Description xml:lang="ru">Республика Мордовия</structure:Description>
+		</structure:Code>
+		<structure:Code value="920000000001">
+			<structure:Description xml:lang="ru">Республика Татарстан</structure:Description>
+		</structure:Code>
+		<structure:Code value="940000000001">
+			<structure:Description xml:lang="ru">Удмуртская Республика</structure:Description>
+		</structure:Code>
+		<structure:Code value="970000000001">
+			<structure:Description xml:lang="ru">Чувашская Республика</structure:Description>
+		</structure:Code>
+		<structure:Code value="330000000001">
+			<structure:Description xml:lang="ru">Кировская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="220000000001">
+			<structure:Description xml:lang="ru">Нижегородская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="530000000001">
+			<structure:Description xml:lang="ru">Оренбургская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="560000000001">
+			<structure:Description xml:lang="ru">Пензенская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="570000000001">
+			<structure:Description xml:lang="ru">Пермский край</structure:Description>
+		</structure:Code>
+		<structure:Code value="360000000001">
+			<structure:Description xml:lang="ru">Самарская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="630000000001">
+			<structure:Description xml:lang="ru">Саратовская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="730000000001">
+			<structure:Description xml:lang="ru">Ульяновская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="034">
+			<structure:Description xml:lang="ru">Уральский фед.округ</structure:Description>
+		</structure:Code>
+		<structure:Code value="370000000001">
+			<structure:Description xml:lang="ru">Курганская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="650000000001">
+			<structure:Description xml:lang="ru">Свердловская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="710000000001">
+			<structure:Description xml:lang="ru">Тюменская область (с а/о)</structure:Description>
+		</structure:Code>
+		<structure:Code value="710000000002">
+			<structure:Description xml:lang="ru">Тюменская обл. (без а/о)</structure:Description>
+		</structure:Code>
+		<structure:Code value="711000000001">
+			<structure:Description xml:lang="ru">Ханты-Мансийский АО - Югра</structure:Description>
+		</structure:Code>
+		<structure:Code value="711400000001">
+			<structure:Description xml:lang="ru">Ямало-Ненецкий АО</structure:Description>
+		</structure:Code>
+		<structure:Code value="750000000001">
+			<structure:Description xml:lang="ru">Челябинская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="035">
+			<structure:Description xml:lang="ru">Сибирский фед.округ</structure:Description>
+		</structure:Code>
+		<structure:Code value="840000000001">
+			<structure:Description xml:lang="ru">Республика Алтай</structure:Description>
+		</structure:Code>
+		<structure:Code value="810000000001">
+			<structure:Description xml:lang="ru">Республика Бурятия</structure:Description>
+		</structure:Code>
+		<structure:Code value="930000000001">
+			<structure:Description xml:lang="ru">Республика Тыва</structure:Description>
+		</structure:Code>
+		<structure:Code value="950000000001">
+			<structure:Description xml:lang="ru">Республика Хакасия</structure:Description>
+		</structure:Code>
+		<structure:Code value="010000000001">
+			<structure:Description xml:lang="ru">Алтайский край</structure:Description>
+		</structure:Code>
+		<structure:Code value="040000000001">
+			<structure:Description xml:lang="ru">Красноярский край</structure:Description>
+		</structure:Code>
+		<structure:Code value="250000000001">
+			<structure:Description xml:lang="ru">Иркутская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="320000000001">
+			<structure:Description xml:lang="ru">Кемеровская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="500000000001">
+			<structure:Description xml:lang="ru">Новосибирская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="520000000001">
+			<structure:Description xml:lang="ru">Омская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="690000000001">
+			<structure:Description xml:lang="ru">Томская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="760000000001">
+			<structure:Description xml:lang="ru">Забайкальский край</structure:Description>
+		</structure:Code>
+		<structure:Code value="036">
+			<structure:Description xml:lang="ru">Дальневосточный фед. округ</structure:Description>
+		</structure:Code>
+		<structure:Code value="980000000001">
+			<structure:Description xml:lang="ru">Республика Саха (Якутия)</structure:Description>
+		</structure:Code>
+		<structure:Code value="050000000001">
+			<structure:Description xml:lang="ru">Приморский край</structure:Description>
+		</structure:Code>
+		<structure:Code value="080000000001">
+			<structure:Description xml:lang="ru">Хабаровский край</structure:Description>
+		</structure:Code>
+		<structure:Code value="300000000001">
+			<structure:Description xml:lang="ru">Камчатский край</structure:Description>
+		</structure:Code>
+		<structure:Code value="100000000001">
+			<structure:Description xml:lang="ru">Амурская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="440000000001">
+			<structure:Description xml:lang="ru">Магаданская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="640000000001">
+			<structure:Description xml:lang="ru">Сахалинская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="990000000001">
+			<structure:Description xml:lang="ru">Еврейская АО</structure:Description>
+		</structure:Code>
+		<structure:Code value="770000000001">
+			<structure:Description xml:lang="ru">Чукотский АО</structure:Description>
+		</structure:Code>
+	</structure:CodeList>
+</CodeLists>
+<Description Id="signObj">
+	<Indicator id="36184" name="Количество выявленных сотрудниками милиции общественной безопасности несовершеннолетних, совершивших административные правонарушения">
+		<Units>
+			<Unit value="человек"/>
+		</Units>
+		<Periodicities>
+			<Periodicity value="Годовая - нарастающим итогом" releases="19 февраля" next-release="19.02.2013"/>
+		</Periodicities>
+		<DataRange start="2008" end="2011"/>
+		<LastUpdate value="2012-02-27T14:49:41"/>
+		<Dimensions>
+			<Dimension value="p3.1" agencyID="3">
+				<Name xml:lang="ru">Справочник территорий РФ</Name>
+			</Dimension>
+		</Dimensions>
+		<Methodology value="Показатель формы «18» (код 180) «Отчет о результатах работы подразделений МОБ, КМ и органов предварительного расследования по предупреждению и пресечению безнадзорности и правонарушений несовершеннолетних», утвержденной приказом МВД России от 18 сентября 2003 г. № 739. Представляют информационные центры МВД, ГУВД, УВД субъектов РФ."/>
+		<Organization value="Министерство внутренних дел"/>
+		<Department value="Главный информационно-аналитический центр"/>
+		<Allocations>
+			<Allocation id="3.12.">
+				<Name xml:lang="ru">По федеральному плану статработ / Министерство внутренних дел / Информация о результатах работы подразделений милиции общественной безопасности, криминальной милиции и органов предварительного следствия по предупреждению и пресечению безнадзорности и правонарушений несовершеннолетних</Name>
+			</Allocation>
+		</Allocations>
+		<Responsible>
+			<Name xml:lang="ru">Васькина Е.В.</Name>
+			<Comments xml:lang="ru">(495) 332 30 07</Comments>
+		</Responsible>
+	</Indicator>
+</Description>
+<DataSet>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="704529"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="625745"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="497736"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="377073"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="030"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="159026"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="030"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="143142"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="030"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="115633"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="030"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="91157"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="140000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="7964"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="140000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="4393"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="140000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2877"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="140000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1606"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="150000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="6426"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="150000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="6081"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="150000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="6144"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="150000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3502"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="170000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="7782"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="170000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="7185"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="170000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="6238"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="170000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="6626"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="200000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="10035"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="200000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="9552"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="200000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="7940"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="200000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="6630"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="240000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="4365"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="240000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="4225"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="240000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="4387"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="240000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="4014"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="290000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="2893"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="290000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="2738"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="290000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2185"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="290000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1604"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="340000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="4035"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="340000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="4939"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="340000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="3743"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="340000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="4214"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="380000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="7272"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="380000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="6451"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="380000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="4519"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="380000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3005"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="420000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="12147"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="420000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="11784"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="420000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="5715"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="420000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3635"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="450000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="56781"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="450000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="48407"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="450000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="40310"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="450000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="26519"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="460000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="14830"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="460000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="15155"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="460000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="15349"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="460000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="13684"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="540000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="880"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="540000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="1045"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="540000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="888"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="540000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="912"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="610000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="2084"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="610000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="2098"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="610000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1715"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="610000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1260"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="660000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="2302"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="660000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="2410"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="660000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2034"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="660000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="4015"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="680000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="3765"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="680000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="2915"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="680000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="946"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="680000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="801"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="280000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="6025"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="280000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="4752"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="280000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="3970"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="280000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3261"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="700000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="4055"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="700000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="3808"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="700000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2828"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="700000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2669"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="780000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="5385"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="780000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="5204"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="780000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="3845"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="780000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3200"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="031"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="58751"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="031"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="58389"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="031"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="50919"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="031"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="39540"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="860000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="3079"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="860000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="2988"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="860000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2054"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="860000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1735"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="870000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="4195"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="870000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="4354"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="870000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="4812"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="870000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3535"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="110000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="7278"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="110000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="7060"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="110000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="4413"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="110000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="4457"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="110000000002"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="7054"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="110000000002"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="6762"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="110000000002"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="4153"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="110000000002"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="4358"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="111000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="224"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="111000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="298"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="111000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="260"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="111000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="99"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="190000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="17118"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="190000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="15733"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="190000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="13977"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="190000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="9456"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="270000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="2622"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="270000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="2384"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="270000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1733"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="270000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1327"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="410000000002"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="14691"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="410000000002"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="15971"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="410000000002"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="15890"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="410000000002"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="12986"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="410000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="6143"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="410000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="7163"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="410000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="6830"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="410000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="5303"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="400000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="8548"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="400000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="8808"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="400000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="9060"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="400000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="7683"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="470000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="5051"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="470000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="5530"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="470000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="4000"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="470000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2214"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="490000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="2753"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="490000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="2616"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="490000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2471"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="490000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1944"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="580000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="1964"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="580000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="1753"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="580000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1569"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="580000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1886"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="039"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="7727"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="039"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="7306"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="039"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="5446"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="039"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3759"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="070000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="5648"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="070000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="5732"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="070000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="3436"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="070000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2212"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="260000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="4"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="260000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="10"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="260000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="29"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="260000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="28"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="820000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="418"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="820000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="289"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="820000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="876"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="820000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="461"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="830000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="320"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="830000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="480"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="830000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="251"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="830000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="235"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="900000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="597"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="900000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="512"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="900000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="593"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="900000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="505"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="910000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="513"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="910000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="122"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="910000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="193"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="910000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="183"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="960000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="227"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="960000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="161"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="960000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="68"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="960000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="135"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="032"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="37368"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="032"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="33839"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="032"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="25523"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="032"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="19787"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="030000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="16112"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="030000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="13278"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="030000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="8197"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="030000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="4388"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="120000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="2355"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="120000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="2669"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="120000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2145"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="120000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1930"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="180000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="5683"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="180000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="5198"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="180000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="3191"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="180000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2258"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="600000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="11104"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="600000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="10708"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="600000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="10411"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="600000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="9600"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="790000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="359"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="790000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="289"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="790000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="245"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="790000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="170"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="850000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="1755"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="850000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="1697"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="850000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1334"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="850000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1441"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="033"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="137920"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="033"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="121254"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="033"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="106132"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="033"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="76602"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="800000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="18523"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="800000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="16670"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="800000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="9837"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="800000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3598"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="880000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="1322"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="880000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="1257"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="880000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="988"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="880000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="838"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="890000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="2320"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="890000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="2319"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="890000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2011"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="890000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1807"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="920000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="29904"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="920000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="20866"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="920000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="20615"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="920000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="12743"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="940000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="5308"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="940000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="5902"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="940000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="4507"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="940000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3967"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="970000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="8484"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="970000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="5048"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="970000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2447"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="970000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2679"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="330000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="5902"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="330000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="8257"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="330000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="7759"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="330000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="6649"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="220000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="17179"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="220000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="15499"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="220000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="13823"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="220000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="9963"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="530000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="5068"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="530000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="5679"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="530000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="5124"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="530000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2888"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="560000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="5279"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="560000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="4546"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="560000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="4290"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="560000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2524"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="570000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="9341"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="570000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="8982"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="570000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="8532"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="570000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="6220"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="360000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="5037"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="360000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="4032"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="360000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="3986"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="360000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3451"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="630000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="20601"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="630000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="18859"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="630000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="18865"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="630000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="17632"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="730000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="3652"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="730000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="3338"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="730000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="3348"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="730000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1643"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="034"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="63595"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="034"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="56054"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="034"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="48353"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="034"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="27853"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="370000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="4417"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="370000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="4077"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="370000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2805"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="370000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1759"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="650000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="30462"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="650000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="26013"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="650000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="24490"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="650000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="10385"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="710000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="12080"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="710000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="11905"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="710000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="8673"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="710000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="7013"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="710000000002"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="2668"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="710000000002"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="3291"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="710000000002"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2905"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="710000000002"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3001"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="711000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="7268"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="711000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="6856"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="711000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="4527"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="711000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2922"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="711400000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="2144"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="711400000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="1758"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="711400000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1241"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="711400000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1090"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="750000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="16636"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="750000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="14059"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="750000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="12385"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="750000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="8696"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="035"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="98642"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="035"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="86960"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="035"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="59375"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="035"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="46278"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="840000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="1271"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="840000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="1442"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="840000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="968"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="840000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="921"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="810000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="4525"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="810000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="3944"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="810000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2622"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="810000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1695"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="930000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="1868"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="930000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="1626"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="930000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1623"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="930000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3513"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="950000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="2501"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="950000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="1719"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="950000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="894"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="950000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="768"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="010000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="11425"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="010000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="9601"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="010000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="7047"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="010000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="4116"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="040000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="12517"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="040000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="9530"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="040000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="5680"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="040000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3782"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="250000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="15054"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="250000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="19063"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="250000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="14676"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="250000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="10636"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="320000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="13386"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="320000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="13281"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="320000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="8441"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="320000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="4907"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="500000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="16397"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="500000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="10669"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="500000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="7531"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="500000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="6217"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="520000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="10006"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="520000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="8468"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="520000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="3630"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="520000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3847"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="690000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="7161"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="690000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="5786"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="690000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="4501"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="690000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3980"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="760000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="2531"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="760000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="1831"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="760000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1762"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="760000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1896"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="036"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="20323"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="036"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="19632"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="036"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="16642"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="036"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="14830"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="980000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="5879"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="980000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="6021"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="980000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="4058"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="980000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="4139"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="050000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="5628"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="050000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="4802"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="050000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="3862"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="050000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3203"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="080000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="2595"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="080000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="2149"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="080000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2055"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="080000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1671"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="300000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="1328"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="300000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="1314"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="300000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1246"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="300000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1269"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="100000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="2296"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="100000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="3021"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="100000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="3406"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="100000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2651"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="440000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="575"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="440000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="543"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="440000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="320"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="440000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="286"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="640000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="969"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="640000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="874"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="640000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="830"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="640000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="860"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="990000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="761"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="990000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="640"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="990000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="503"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="990000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="399"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="770000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2008</generic:Time>
+			<generic:ObsValue value="292"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="770000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2009</generic:Time>
+			<generic:ObsValue value="268"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="770000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="362"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="p3.1" value="770000000001"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="человек"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="352"/>
+		</generic:Obs>
+	</generic:Series>
+</DataSet>
+</GenericData>

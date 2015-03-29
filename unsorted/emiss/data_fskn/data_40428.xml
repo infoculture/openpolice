@@ -1,0 +1,5503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GenericData
+ xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/message"
+ xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/common"
+ xmlns:compact="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/compact"
+ xmlns:cross="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/cross"
+ xmlns:generic="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/generic"
+ xmlns:query="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/query"
+ xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/structure"
+ xmlns:utility="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/utility"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/message SDMXMessage.xsd">
+<Header Id="singHead">
+	<ID>824404526</ID>
+	<Test>false</Test>
+	<Truncated>false</Truncated>
+	<Prepared>2012-11-24T10:38:22</Prepared>
+	<Extracted>2012-11-24T10:38:22</Extracted>
+	<Sender id="UniSIS">
+		<Name xml:lang="en">Unified Interdepartmental Statistical Information System</Name>
+		<Name xml:lang="ru">Единая межведомственная информационно-статистическая система</Name>
+		<Contact>
+			<URI>mailto:emiss.dev@mail.ru</URI>
+		</Contact>
+	</Sender>
+	<DataSetAgency>14</DataSetAgency>
+	<DataSetID>14.01.01.</DataSetID>
+</Header>
+<CodeLists>
+	<structure:CodeList id="cl_okrug">
+		<structure:Name xml:lang="ru">справочник по федеральным округам и субъектам Российской Федерации</structure:Name>
+		<structure:Code value="10000000">
+			<structure:Description xml:lang="ru">Российская Федерация</structure:Description>
+		</structure:Code>
+		<structure:Code value="13000000">
+			<structure:Description xml:lang="ru">Центральный федеральный округ</structure:Description>
+		</structure:Code>
+		<structure:Code value="13014000">
+			<structure:Description xml:lang="ru">Белгородская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13015000">
+			<structure:Description xml:lang="ru">Брянская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13017000">
+			<structure:Description xml:lang="ru">Владимирская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13020000">
+			<structure:Description xml:lang="ru">Воронежская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13024000">
+			<structure:Description xml:lang="ru">Ивановская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13029000">
+			<structure:Description xml:lang="ru">Калужская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13034000">
+			<structure:Description xml:lang="ru">Костромская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13038000">
+			<structure:Description xml:lang="ru">Курская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13042000">
+			<structure:Description xml:lang="ru">Липецкая область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13046000">
+			<structure:Description xml:lang="ru">Московская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13054000">
+			<structure:Description xml:lang="ru">Орловская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13061000">
+			<structure:Description xml:lang="ru">Рязанская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13066000">
+			<structure:Description xml:lang="ru">Смоленская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13068000">
+			<structure:Description xml:lang="ru">Тамбовская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13028000">
+			<structure:Description xml:lang="ru">Тверская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13070000">
+			<structure:Description xml:lang="ru">Тульская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13078000">
+			<structure:Description xml:lang="ru">Ярославская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13045000">
+			<structure:Description xml:lang="ru">г.Москва</structure:Description>
+		</structure:Code>
+		<structure:Code value="13100000">
+			<structure:Description xml:lang="ru">Северо-Западный федеральный округ</structure:Description>
+		</structure:Code>
+		<structure:Code value="13186000">
+			<structure:Description xml:lang="ru">Республика Карелия</structure:Description>
+		</structure:Code>
+		<structure:Code value="13187000">
+			<structure:Description xml:lang="ru">Республика Коми</structure:Description>
+		</structure:Code>
+		<structure:Code value="13111000">
+			<structure:Description xml:lang="ru">Архангельская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13119000">
+			<structure:Description xml:lang="ru">Вологодская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13127000">
+			<structure:Description xml:lang="ru">Калининградская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13141000">
+			<structure:Description xml:lang="ru">Ленинградская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13147000">
+			<structure:Description xml:lang="ru">Мурманская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13149000">
+			<structure:Description xml:lang="ru">Новгородская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13158000">
+			<structure:Description xml:lang="ru">Псковская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13140000">
+			<structure:Description xml:lang="ru">г.Санкт-Петербург</structure:Description>
+		</structure:Code>
+		<structure:Code value="13111100">
+			<structure:Description xml:lang="ru">Ненецкий АО</structure:Description>
+		</structure:Code>
+		<structure:Code value="13700000">
+			<structure:Description xml:lang="ru">Северо-Кавказский федеральный округ</structure:Description>
+		</structure:Code>
+		<structure:Code value="13782000">
+			<structure:Description xml:lang="ru">Республика Дагестан</structure:Description>
+		</structure:Code>
+		<structure:Code value="13726000">
+			<structure:Description xml:lang="ru">Республика Ингушетия</structure:Description>
+		</structure:Code>
+		<structure:Code value="13783000">
+			<structure:Description xml:lang="ru">Кабардино-Балкарская Республика</structure:Description>
+		</structure:Code>
+		<structure:Code value="13791000">
+			<structure:Description xml:lang="ru">Карачаево-Черкесская Республика</structure:Description>
+		</structure:Code>
+		<structure:Code value="13790000">
+			<structure:Description xml:lang="ru">Северная Осетия - Алания</structure:Description>
+		</structure:Code>
+		<structure:Code value="13796000">
+			<structure:Description xml:lang="ru">Чеченская Республика</structure:Description>
+		</structure:Code>
+		<structure:Code value="13707000">
+			<structure:Description xml:lang="ru">Ставропольский край</structure:Description>
+		</structure:Code>
+		<structure:Code value="13200000">
+			<structure:Description xml:lang="ru">Южный федеральный округ</structure:Description>
+		</structure:Code>
+		<structure:Code value="13279000">
+			<structure:Description xml:lang="ru">Республика Адыгея</structure:Description>
+		</structure:Code>
+		<structure:Code value="13285000">
+			<structure:Description xml:lang="ru">Республика Калмыкия</structure:Description>
+		</structure:Code>
+		<structure:Code value="13203000">
+			<structure:Description xml:lang="ru">Краснодарский край</structure:Description>
+		</structure:Code>
+		<structure:Code value="13212000">
+			<structure:Description xml:lang="ru">Астраханская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13218000">
+			<structure:Description xml:lang="ru">Волгоградская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13260000">
+			<structure:Description xml:lang="ru">Ростовская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13300000">
+			<structure:Description xml:lang="ru">Приволжский федеральный округ</structure:Description>
+		</structure:Code>
+		<structure:Code value="13380000">
+			<structure:Description xml:lang="ru">Республика Башкортостан</structure:Description>
+		</structure:Code>
+		<structure:Code value="13388000">
+			<structure:Description xml:lang="ru">Республика Марий-Эл</structure:Description>
+		</structure:Code>
+		<structure:Code value="13389000">
+			<structure:Description xml:lang="ru">Республика Мордовия</structure:Description>
+		</structure:Code>
+		<structure:Code value="13392000">
+			<structure:Description xml:lang="ru">Республика Татарстан</structure:Description>
+		</structure:Code>
+		<structure:Code value="13394000">
+			<structure:Description xml:lang="ru">Удмуртская Республика</structure:Description>
+		</structure:Code>
+		<structure:Code value="13397000">
+			<structure:Description xml:lang="ru">Чувашская Республика</structure:Description>
+		</structure:Code>
+		<structure:Code value="13357000">
+			<structure:Description xml:lang="ru">Пермский край</structure:Description>
+		</structure:Code>
+		<structure:Code value="13333000">
+			<structure:Description xml:lang="ru">Кировская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13322000">
+			<structure:Description xml:lang="ru">Нижегородская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13353000">
+			<structure:Description xml:lang="ru">Оренбургская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13356000">
+			<structure:Description xml:lang="ru">Пензенская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13336000">
+			<structure:Description xml:lang="ru">Самарская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13363000">
+			<structure:Description xml:lang="ru">Саратовская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13373000">
+			<structure:Description xml:lang="ru">Ульяновская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13400000">
+			<structure:Description xml:lang="ru">Уральский федеральный округ</structure:Description>
+		</structure:Code>
+		<structure:Code value="13437000">
+			<structure:Description xml:lang="ru">Курганская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13465000">
+			<structure:Description xml:lang="ru">Свердловская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13471000">
+			<structure:Description xml:lang="ru">Тюменская  область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13475000">
+			<structure:Description xml:lang="ru">Челябинская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13471100">
+			<structure:Description xml:lang="ru">Ханты-Мансийский АО - Югра</structure:Description>
+		</structure:Code>
+		<structure:Code value="13471140">
+			<structure:Description xml:lang="ru">Ямало-Ненецкий АО</structure:Description>
+		</structure:Code>
+		<structure:Code value="13500000">
+			<structure:Description xml:lang="ru">Сибирский федеральный округ</structure:Description>
+		</structure:Code>
+		<structure:Code value="13584000">
+			<structure:Description xml:lang="ru">Республика Алтай</structure:Description>
+		</structure:Code>
+		<structure:Code value="13581000">
+			<structure:Description xml:lang="ru">Республика Бурятия</structure:Description>
+		</structure:Code>
+		<structure:Code value="13593000">
+			<structure:Description xml:lang="ru">Республика Тыва</structure:Description>
+		</structure:Code>
+		<structure:Code value="13595000">
+			<structure:Description xml:lang="ru">Республика Хакасия</structure:Description>
+		</structure:Code>
+		<structure:Code value="13501000">
+			<structure:Description xml:lang="ru">Алтайский край</structure:Description>
+		</structure:Code>
+		<structure:Code value="13576000">
+			<structure:Description xml:lang="ru">Забайкальский край</structure:Description>
+		</structure:Code>
+		<structure:Code value="13504000">
+			<structure:Description xml:lang="ru">Красноярский край</structure:Description>
+		</structure:Code>
+		<structure:Code value="13525000">
+			<structure:Description xml:lang="ru">Иркутская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13532000">
+			<structure:Description xml:lang="ru">Кемеровская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13550000">
+			<structure:Description xml:lang="ru">Новосибирская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13552000">
+			<structure:Description xml:lang="ru">Омская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13569000">
+			<structure:Description xml:lang="ru">Томская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13600000">
+			<structure:Description xml:lang="ru">Дальневосточный федеральный округ</structure:Description>
+		</structure:Code>
+		<structure:Code value="13698000">
+			<structure:Description xml:lang="ru">Республика Саха (Якутия)</structure:Description>
+		</structure:Code>
+		<structure:Code value="13630000">
+			<structure:Description xml:lang="ru">Камчатский край</structure:Description>
+		</structure:Code>
+		<structure:Code value="13605000">
+			<structure:Description xml:lang="ru">Приморский край</structure:Description>
+		</structure:Code>
+		<structure:Code value="13608000">
+			<structure:Description xml:lang="ru">Хабаровский край</structure:Description>
+		</structure:Code>
+		<structure:Code value="13610000">
+			<structure:Description xml:lang="ru">Амурская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13644000">
+			<structure:Description xml:lang="ru">Магаданская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13664000">
+			<structure:Description xml:lang="ru">Сахалинская область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13699000">
+			<structure:Description xml:lang="ru">Еврейская автономная область</structure:Description>
+		</structure:Code>
+		<structure:Code value="13677000">
+			<structure:Description xml:lang="ru">Чукотский АО</structure:Description>
+		</structure:Code>
+	</structure:CodeList>
+	<structure:CodeList id="OKSM">
+		<structure:Name xml:lang="ru">ОКСМ</structure:Name>
+		<structure:Code value="643">
+			<structure:Description xml:lang="ru">Российская Федерация</structure:Description>
+		</structure:Code>
+	</structure:CodeList>
+</CodeLists>
+<Description Id="signObj">
+	<Indicator id="40428" name="Количество преступлений, связанных с незаконным оборотом наркотических средств, психотропных веществ и их прекурсоров или аналогов, сильнодействующих веществ, зарегистрированных в отчетном периоде">
+		<Units>
+			<Unit value="единица"/>
+		</Units>
+		<Periodicities>
+			<Periodicity value="Годовая" releases="20 февраля" next-release="20.02.2013"/>
+			<Periodicity value="Полугодовая" releases="20 августа" next-release="20.08.2013"/>
+		</Periodicities>
+		<DataRange start="2010" end="2012"/>
+		<LastUpdate value="2012-08-06T12:59:42"/>
+		<Dimensions>
+			<Dimension value="OKSM">
+				<Name xml:lang="ru">ОКСМ</Name>
+			</Dimension>
+			<Dimension value="cl_okrug" agencyID="14">
+				<Name xml:lang="ru">справочник по федеральным округам и субъектам Российской Федерации</Name>
+			</Dimension>
+		</Dimensions>
+		<Methodology value="Показатель отражает общее количество преступлений, связанных с незаконным оборотом наркотических средств, психотропных веществ и их прекурсоров или аналогов, сильнодействующих веществ, по оконченным предварительным расследованиям уголовным делам, а также материалам, в результате рассмотрения которых принято решение об отказе в возбуждения уголовного дела по пунктам 3, 4 части 1 статьи 24 Уголовно-процессуального кодекса Российской Федерации  Перечень статей Уголовного кодекса Российской Федерации, предусматривающих ответственность за преступления, связанные с незаконным оборотом наркотических средств, психотропных веществ и их прекурсоров или аналогов, сильнодействующих веществ, утверждается Генеральной прокуратурой Российской Федерации и МВД России по согласованию с ФСКН России.  Показатель рассчитывается на основании документов первичного учета о результатах расследования преступлений (статистических карточек) в соответствии с алгоритмом формирования, разрабатываемым ГИАЦ МВД России по согласованию с ФСКН России.   "/>
+		<Organization value="Федеральная служба РФ по контролю за оборотом наркотиков"/>
+		<Allocations>
+			<Allocation id="14.01.">
+				<Name xml:lang="ru">По федеральному плану статработ / Федеральная служба РФ по контролю за оборотом наркотиков / Информация о преступлениях, связанных с незаконным оборотом наркотических средств, психотропных веществ и их прекурсоров или аналогов, сильнодействующих веществ, и лицах, их совершивших</Name>
+			</Allocation>
+		</Allocations>
+		<Comment value="Источником получения показателя является форма межведомственной статистической отчетности 1-МВ-НОН «Сведения о преступлениях, связанных с незаконным оборотом наркотических средств, психотропных веществ и их прекурсоров или аналогов, сильнодействующих веществ, и лицах, их совершивших».  Форма 1-МВ-НОН введена в 2010 году, начиная с отчета за январь-март, совместным приказом ФСКН России, Генеральной прокуратуры Российской Федерации, МВД  Российской Федерации, Министерства юстиции Российской Федерации, Министра обороны Российской Федерации, МИД Российской Федерации, Минздравсоцразвития Российской Федерации,  Минобрнауки Российской Федерации, ФСБ Российской Федерации, ФТС Российской Федерации, Федерального космического агентства №29/53/70/30/76/1669/75н/107/49/268/17 от 10.02.2010 г. «Об утверждении форм межведомственной статистической отчетности о результатах борьбы с незаконным оборотом наркотиков».   "/>
+		<Responsible>
+			<Name xml:lang="ru">Идрисов Т.А.</Name>
+			<Comments xml:lang="ru">6069767 fskn-emiss@yandex.ru</Comments>
+		</Responsible>
+	</Indicator>
+</Description>
+<DataSet>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="10000000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="222564"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="10000000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="112398"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="10000000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="215214"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="10000000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="114977"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13000000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="43360"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13000000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="22186"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13000000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="41484"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13000000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="23236"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13014000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1514"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13014000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="629"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13014000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1110"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13014000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="633"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13015000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1884"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13015000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1107"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13015000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1713"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13015000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1003"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13017000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1778"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13017000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="881"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13017000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1737"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13017000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="954"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13020000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2084"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13020000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1138"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13020000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2052"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13020000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="953"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13024000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1435"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13024000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="697"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13024000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1226"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13024000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="726"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13029000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1086"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13029000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="489"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13029000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="910"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13029000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="490"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13034000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="881"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13034000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="507"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13034000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="864"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13034000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="516"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13038000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1023"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13038000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="564"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13038000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="993"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13038000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="559"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13042000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1037"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13042000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="580"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13042000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="985"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13042000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="601"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13046000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="9459"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13046000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="5283"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13046000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="10075"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13046000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="5819"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13054000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1189"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13054000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="526"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13054000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="889"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13054000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="435"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13061000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1204"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13061000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="566"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13061000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1019"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13061000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="640"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13066000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1332"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13066000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="657"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13066000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1267"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13066000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="661"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13068000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1911"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13068000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="825"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13068000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1583"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13068000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="875"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13028000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1628"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13028000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="698"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13028000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1399"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13028000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="660"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13070000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1726"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13070000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="916"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13070000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1642"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13070000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="964"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13078000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1245"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13078000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="657"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13078000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1235"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13078000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="719"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13045000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="10944"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13045000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="5466"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13045000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="10785"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13045000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="6028"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13100000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="22389"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13100000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="12665"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13100000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="24318"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13100000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="12335"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13186000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1073"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13186000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="689"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13186000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1113"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13186000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="616"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13187000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1289"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13187000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="788"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13187000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1305"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13187000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="672"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13111000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1018"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13111000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="652"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13111000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1088"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13111000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="532"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13119000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1500"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13119000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="821"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13119000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1523"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13119000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="734"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13127000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1199"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13127000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="599"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13127000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1156"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13127000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="650"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13141000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1909"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13141000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1015"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13141000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2094"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13141000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1131"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13147000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1631"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13147000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="928"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13147000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1809"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13147000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1137"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13149000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="825"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13149000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="369"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13149000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="727"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13149000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="465"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13158000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="736"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13158000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="376"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13158000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="670"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13158000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="347"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13140000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="11153"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13140000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="6401"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13140000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="12786"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13140000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="6032"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13111100"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="56"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13111100"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="27"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13111100"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="47"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13111100"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="19"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13700000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="10192"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13700000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="5267"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13700000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="10134"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13700000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="5522"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13782000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1477"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13782000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="924"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13782000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1885"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13782000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1174"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13726000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="458"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13726000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="294"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13726000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="471"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13726000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="226"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13783000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="973"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13783000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="517"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13783000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="997"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13783000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="639"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13791000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="542"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13791000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="233"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13791000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="462"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13791000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="222"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13790000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1336"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13790000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="704"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13790000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1411"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13790000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="767"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13796000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="765"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13796000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="316"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13796000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="641"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13796000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="363"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13707000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="4641"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13707000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2279"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13707000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="4267"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13707000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="2131"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13200000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="21642"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13200000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="11262"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13200000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="20800"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13200000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="11341"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13279000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="359"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13279000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="169"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13279000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="298"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13279000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="169"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13285000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="624"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13285000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="344"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13285000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="621"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13285000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="331"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13203000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="8678"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13203000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="4725"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13203000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="8397"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13203000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="4601"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13212000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2245"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13212000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1055"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13212000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2193"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13212000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1174"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13218000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="3840"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13218000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1771"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13218000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3311"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13218000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1743"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13260000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="5896"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13260000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3198"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13260000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="5980"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13260000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="3323"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13300000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="40414"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13300000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="19663"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13300000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="37961"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13300000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="19529"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13380000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="5342"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13380000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2939"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13380000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="5315"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13380000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="2990"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13388000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="780"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13388000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="350"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13388000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="751"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13388000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="352"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13389000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="512"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13389000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="317"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13389000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="591"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13389000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="295"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13392000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="4786"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13392000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2119"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13392000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="4093"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13392000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1946"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13394000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2211"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13394000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1002"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13394000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2272"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13394000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1006"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13397000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="829"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13397000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="419"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13397000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="867"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13397000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="393"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13357000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="3348"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13357000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1677"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13357000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3126"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13357000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="2313"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13333000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="862"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13333000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="503"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13333000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="937"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13333000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="686"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13322000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="3389"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13322000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1954"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13322000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3897"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13322000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1595"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13353000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="3187"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13353000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1559"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13353000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3188"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13353000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1320"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13356000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1250"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13356000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="685"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13356000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1277"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13356000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="721"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13336000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="8868"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13336000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3905"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13336000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="7478"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13336000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="3488"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13363000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="3576"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13363000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1575"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13363000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2850"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13363000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1701"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13373000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1474"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13373000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="659"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13373000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1319"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13373000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="723"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13400000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="19689"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13400000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="9914"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13400000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="19608"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13400000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="10833"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13437000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1644"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13437000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="812"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13437000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1718"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13437000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="860"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13465000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="6762"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13465000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3217"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13465000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="6430"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13465000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="3391"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13471000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2328"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13471000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1165"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13471000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2635"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13471000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1542"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13475000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="4650"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13475000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2381"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13475000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="4607"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13475000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="2787"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13471100"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="3273"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13471100"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1772"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13471100"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3316"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13471100"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1737"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13471140"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1032"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13471140"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="567"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13471140"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="902"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13471140"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="516"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13500000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="39313"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13500000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="19279"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13500000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="37666"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13500000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="20156"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13584000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="328"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13584000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="183"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13584000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="311"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13584000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="157"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13581000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2308"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13581000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1115"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13581000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2260"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13581000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1113"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13593000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1144"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13593000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="502"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13593000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1132"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13593000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="481"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13595000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="820"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13595000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="401"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13595000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="773"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13595000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="446"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13501000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="5236"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13501000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2263"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13501000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="4681"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13501000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="2601"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13576000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1828"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13576000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1097"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13576000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2002"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13576000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1061"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13504000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="7225"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13504000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3144"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13504000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="5883"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13504000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="3141"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13525000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="3693"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13525000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1850"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13525000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3651"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13525000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1786"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13532000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="5593"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13532000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3072"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13532000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="5749"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13532000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="2841"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13550000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="6097"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13550000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3045"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13550000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="6214"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13550000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="3189"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13552000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="3492"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13552000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1807"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13552000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="3366"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13552000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="2302"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13569000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1549"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13569000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="800"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13569000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1644"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13569000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1038"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13600000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="13410"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13600000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="5609"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13600000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="11486"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13600000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="5558"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13698000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="671"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13698000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="330"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13698000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="714"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13698000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="431"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13630000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="439"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13630000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="249"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13630000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="460"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13630000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="271"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13605000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="5563"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13605000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1888"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13605000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="4061"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13605000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1695"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13608000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2260"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13608000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1024"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13608000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2005"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13608000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1037"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13610000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="2360"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13610000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1092"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13610000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="2213"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13610000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="1093"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13644000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="461"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13644000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="252"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13644000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="440"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13644000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="232"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13664000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="1056"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13664000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="560"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13664000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="1097"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13664000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="575"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13699000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="548"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13699000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="181"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13699000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="448"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13699000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="176"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13677000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2010</generic:Time>
+			<generic:ObsValue value="52"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13677000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="33"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13677000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-декабрь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2011</generic:Time>
+			<generic:ObsValue value="48"/>
+		</generic:Obs>
+	</generic:Series>
+	<generic:Series>
+		<generic:SeriesKey>
+			<generic:Value concept="cl_okrug" value="13677000"/>
+			<generic:Value concept="OKSM" value="643"/>
+		</generic:SeriesKey>
+		<generic:Attributes>
+			<generic:Value concept="EI" value="единица"/>
+			<generic:Value concept="PERIOD" value="январь-июнь"/>
+		</generic:Attributes>
+		<generic:Obs>
+			<generic:Time>2012</generic:Time>
+			<generic:ObsValue value="48"/>
+		</generic:Obs>
+	</generic:Series>
+</DataSet>
+</GenericData>
